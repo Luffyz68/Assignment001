@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid</title>
+
+<style>
+    body {
+        margin: 0;
+        background: #8097e2; 
+        display: flex;
+        justify-content: center; 
+        padding: 20px 0;
+    }
+
+    .container {
+        width: 90%; 
+        background: transparent; 
+        padding: 0; 
+        box-sizing: border-box;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 15px; 
+    }
+    .box {
+        background: #e0e0e0; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100px;
+        font-family: sans-serif;
+        color: #666;
+        font-weight: bold;
+    }
+    .bar {
+        grid-column: span 4;
+        height: 45px;
+        background: #d8d8d8;
+    }
+    .wide-2 {
+        grid-column: span 2;
+    }
+    .tall {
+        min-height: 200px;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="grid">
+
+        <div class="box bar">Header</div>
+
+        <div class="box">box 1</div>
+        <div class="box wide-2">box 2</div>
+        <div class="box">box 3</div>
+
+        <div class="box wide-2">box 4</div>
+        <div class="box">box 5</div>
+        <div class="box">box 6</div>
+
+        <div class="box tall">box 7</div>
+        <div class="box wide-2 tall">box 8</div>
+        <div class="box tall">box 9</div>
+
+        <div class="box wide-2">box 10</div>
+        <div class="box">box 11</div>
+        <div class="box">box 12</div>
+
+        <div class="box bar">Footer</div>
+
+    </div>
+</div>
+
+</body>
+</html>

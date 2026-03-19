@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Store</title>
+
+<style>
+    body {
+        margin: 0;
+        background: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        font-family: sans-serif;
+    }
+
+    .container {
+        width: 95%;
+        max-width: 1200px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .box {
+        background: #e76363;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: #777;
+    }
+
+    .header {
+        height: 100px;
+        width: 100%;
+    }
+
+    .main-grid {
+        display: flex;
+        gap: 30px;
+    }
+
+    .left-sidebar {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sidebar-tall { height: 300px; }
+    .sidebar-small { height: 80px; }
+    .sidebar-small1 { height: 150px; }
+
+    .right-side-wrapper {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 40px; 
+    }
+    .grid-content {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .grid-row {
+        display: flex;
+        gap: 20px;
+    }
+
+    .col {
+    flex: 2; 
+    height: 240px;
+    background: #7b9fe6;
+    }
+
+
+    .footer {
+        height: 60px;
+        width: 100%;
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="box header">Header</div>
+
+    <div class="main-grid">
+        
+        <div class="left-sidebar">
+            <div class="box sidebar-tall">Box 1</div>
+            <div class="box sidebar-small1">Box 2</div>
+            <div class="box sidebar-small">Box 3</div>
+        </div>
+
+        <div class="right-side-wrapper">
+            
+            <div class="grid-content">
+                <div class="grid-row">
+                    <div class="box col">Box 4</div>
+                    <div class="box col">Box 5</div>
+                    <div class="box col">Box 6</div>
+                </div>
+
+                <div class="grid-row">
+                    <div class="box col">Box 7</div>
+                    <div class="box col">Box 8</div>
+                    <div class="box col">Box 9</div>
+                </div>
+
+                <div class="grid-row">
+                    <div class="box col">Box 10</div>
+                    <div class="box col">Box 11</div>
+                    <div class="box col">Box 12</div>
+                </div>
+            </div>
+
+            <div class="box footer">Footer</div>
+            
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

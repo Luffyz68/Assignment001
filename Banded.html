@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Banded</title>
+
+<style>
+body{
+    margin: 0;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    padding: 35px;
+    
+   
+}
+
+.row{
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 10px;
+    
+}
+
+.box{
+    background: #b71515;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.small{
+    height: 90px;
+}
+
+.w20{
+    width: 20%;
+    background: #4661f9;
+}
+
+.w40{
+    width: 40%;
+    background: linear-gradient(to right, #ff0000, #00ff00);
+}
+
+.banner{
+    height: 400px;
+    background: linear-gradient(to right, #12a407, #0bc8ed);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex{
+    height: 120px;
+}
+.d1{
+    width: 20%;
+    background-color: #0bc8ed;
+}
+.d2{
+    width: 75%;
+    background: #ef0d8d;
+}
+
+/*.flex2{
+    flex: 2;
+}*/
+.flex2{
+    height: 120px;
+}
+.a1{
+    width: 20%;
+    background-color: #b10606;
+}
+.a2{
+    width: 75%;
+    background: #00ff00;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="row">
+        <div class="box small w20">Box 1</div>
+        <div class="box small w40">Box 2</div>
+    </div>
+    <div class="banner">Banner</div>
+    <div class="row">
+        <div class="box flex d1">Box 3</div>
+        <div class="box flex d2">Box 4</div>
+    </div>
+    <div class="row">
+        <div class="box flex2 a2">Box 5</div>
+        <div class="box flex2 a1">Box 6</div>
+    </div>
+
+</div>
+
+</body>
+</html>

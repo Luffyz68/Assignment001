@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Workspace</title>
+
+<style>
+    body {
+        margin: 0;
+        background: #0e0aff;
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+    }
+    .container {
+        width: 95%;
+        max-width: 1200px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .box {
+        background: #e0e0e0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #666;
+        font-weight: bold;
+    }
+    .header-top {
+        height: 100px;
+        width: 100%;
+    }
+
+    .banner-full {
+        height: 250px;
+        width: 100%;
+    }
+    .row-4-col {
+        display: flex;
+        gap: 15px;
+        height: 200px;
+    }
+
+    .col {
+        flex: 1;
+        height: 100%;
+    }
+    .split-row {
+        display: flex;
+        gap: 15px;
+        height: 150px;
+    }
+
+    .large-box { flex: 3; }
+    .small-sidebar-box { flex: 1; }
+
+    .footer-bar {
+        height: 100px;
+        width: 100%;
+    }
+</style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="box header-top">Header</div>
+
+        <div class="box banner-full">Banner</div>
+
+        <div class="row-4-col">
+            <div class="box col">Box 2</div>
+            <div class="box col">Box 3</div>
+            <div class="box col">Box 4</div>
+            <div class="box col">Box 5</div>
+        </div>
+
+        <div class="split-row">
+            <div class="box large-box">Box 6</div>
+            <div class="box small-sidebar-box">Box 7</div>
+        </div>
+
+        <div class="box footer-bar">Footer</div>
+
+    </div>
+
+</body>
+</html>
